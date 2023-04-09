@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateTransferMap", "CreateTransferMap\CreateTransferMap.csproj", "{7A1C855B-00E0-4DDD-97D7-9C621751862B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A1C855B-00E0-4DDD-97D7-9C621751862B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A1C855B-00E0-4DDD-97D7-9C621751862B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A1C855B-00E0-4DDD-97D7-9C621751862B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A1C855B-00E0-4DDD-97D7-9C621751862B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84543EB8-6EE3-4EB2-927F-6A846BA9D67C}
+	EndGlobalSection
+EndGlobal
