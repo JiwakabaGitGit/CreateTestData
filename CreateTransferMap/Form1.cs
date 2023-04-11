@@ -109,7 +109,7 @@ namespace CreateTransferMap
 
 					// スタック段数
 					int stuckNumber = decimal.ToInt32( this.numericUpDown_Stack.Value );
-					sw.Write( stuckNumber.ToString( "X4" ) );
+					sw.Write( stuckNumber.ToString( "X2" ) );
 
 					// アイランド配列数XY(SBS)
 					int islandArrayX = decimal.ToInt32( this.numericUpDown_SbsX.Value );
@@ -148,7 +148,7 @@ namespace CreateTransferMap
 										sw.Write( iTxIndex.ToString( "X4" ) );
 										int iTyIndex = ( islandArrayY * stuckNumber ) *  j + ( stuckNumber * i ) + iZ;
 										sw.Write( iTyIndex.ToString( "X4" ) );
-										sw.Write( iZ.ToString( "X4" ) );
+										sw.Write( iZ.ToString( "X2" ) );
 
 										iSequenceOrder++;
 									}
@@ -204,7 +204,7 @@ namespace CreateTransferMap
 									sw.Write( iTxIndex.ToString( "X4" ) );
 									int iTyIndex = ( islandArrayY * stuckNumber ) * j + ( stuckNumber * i ) + iZ;
 									sw.Write( iTyIndex.ToString( "X4" ) );
-									sw.Write( iZ.ToString( "X4" ) );
+									sw.Write( iZ.ToString( "X2" ) );
 
 									iSequenceOrder++;
 

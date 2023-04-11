@@ -129,9 +129,10 @@
             // 
             // numericUpDown_X
             // 
+            this.numericUpDown_X.Hexadecimal = true;
             this.numericUpDown_X.Location = new System.Drawing.Point(130, 87);
-            this.numericUpDown_X.Minimum = new decimal(new int[] {
-            1,
+            this.numericUpDown_X.Maximum = new decimal(new int[] {
+            65535,
             0,
             0,
             0});
@@ -146,9 +147,10 @@
             // 
             // numericUpDown_Y
             // 
+            this.numericUpDown_Y.Hexadecimal = true;
             this.numericUpDown_Y.Location = new System.Drawing.Point(129, 123);
-            this.numericUpDown_Y.Minimum = new decimal(new int[] {
-            1,
+            this.numericUpDown_Y.Maximum = new decimal(new int[] {
+            65535,
             0,
             0,
             0});
@@ -163,14 +165,10 @@
             // 
             // numericUpDown_Stack
             // 
+            this.numericUpDown_Stack.Hexadecimal = true;
             this.numericUpDown_Stack.Location = new System.Drawing.Point(130, 157);
             this.numericUpDown_Stack.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.numericUpDown_Stack.Minimum = new decimal(new int[] {
-            1,
+            255,
             0,
             0,
             0});
@@ -185,14 +183,10 @@
             // 
             // numericUpDown_SbsX
             // 
+            this.numericUpDown_SbsX.Hexadecimal = true;
             this.numericUpDown_SbsX.Location = new System.Drawing.Point(130, 187);
             this.numericUpDown_SbsX.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown_SbsX.Minimum = new decimal(new int[] {
-            1,
+            65535,
             0,
             0,
             0});
@@ -207,14 +201,10 @@
             // 
             // numericUpDown_SbsY
             // 
+            this.numericUpDown_SbsY.Hexadecimal = true;
             this.numericUpDown_SbsY.Location = new System.Drawing.Point(129, 217);
             this.numericUpDown_SbsY.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.numericUpDown_SbsY.Minimum = new decimal(new int[] {
-            1,
+            65535,
             0,
             0,
             0});
@@ -229,14 +219,10 @@
             // 
             // numericUpDown_SubstNumber
             // 
+            this.numericUpDown_SubstNumber.Hexadecimal = true;
             this.numericUpDown_SubstNumber.Location = new System.Drawing.Point(129, 250);
             this.numericUpDown_SubstNumber.Maximum = new decimal(new int[] {
-            2000000,
-            0,
-            0,
-            0});
-            this.numericUpDown_SubstNumber.Minimum = new decimal(new int[] {
-            1,
+            65535,
             0,
             0,
             0});
@@ -260,14 +246,10 @@
             // 
             // numericUpDown_remainChip
             // 
+            this.numericUpDown_remainChip.Hexadecimal = true;
             this.numericUpDown_remainChip.Location = new System.Drawing.Point(130, 289);
             this.numericUpDown_remainChip.Maximum = new decimal(new int[] {
-            2000000,
-            0,
-            0,
-            0});
-            this.numericUpDown_remainChip.Minimum = new decimal(new int[] {
-            1,
+            65535,
             0,
             0,
             0});
