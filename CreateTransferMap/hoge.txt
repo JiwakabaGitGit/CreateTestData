@@ -1,0 +1,42 @@
+void CFeederUnit::TransferMapMountimingShiftSet()
+{
+	NormalTransferMapMountimingShiftSet();
+}
+
+void CFeederUnit::NormalTransferMapMountimingShiftSet()
+{
+	int	i=0,j=0;
+
+	// Ｙマルチ数の取得
+	long nMaxPosition = (long)m_dWorkIslandCountY;
+
+	// スタック段数の取得
+	long nStackNumber = GetStackNumber();
+	
+	for( i = 1; i <= nMaxPosition; i += nStackNumber )
+	{
+		YESNO isUseIsland = _NO_;
+
+		// チップがアイランドに搭載されていないか調べる
+		for( j = 1; j <= nStackNumber; j++ )
+		{
+			dwIslandStatus = m_pShiftMain->m_pActor->m_pShiftDataAccessor->GetIslandStatus( m_nMountTiming, 0, i + ( j - 1) );
+			if( dwIslandStatus  & SFT_NG_MOUNT )
+			{
+				// マウント不可のアイランド有
+				isUseIsland = _YES_;
+				break;
+			}
+		}
+
+		// アイランドにチップが搭載されていなければ、スタック段数分スキップアイランドに変換する
+		if( isUseIsland == _NO_ )
+		{
+			for( j = i; j <= nStackNumber; j++ )
+			{
+				// スキップアイランドに変換する。
+				m_pShiftMain->m_pActor->m_pShiftDataAccessor->SetIslandStatus( m_nMountTiming, 0, j, SFT_SKIP, SFT_OVERWRITE );
+			}
+		}
+	}
+}
